@@ -105,16 +105,29 @@ body {
 /*
 app.html
 */
+.login-page--app{
+  margin-top: 20px;
+  padding: 0;
+}
 table{
   width: 100%;
   background: #FFFFFF;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  margin-bottom: 20px;
 }
+td{
+  padding: 10px;
+}
+.login-page tr:first-child td{
+  font-weight: bold;
+}
+
 .switch {
   position: relative;
   display: inline-block;
   width: 60px;
   height: 34px;
+  float: right;
 }
 
 .switch input {display:none;}
@@ -165,3 +178,4 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+

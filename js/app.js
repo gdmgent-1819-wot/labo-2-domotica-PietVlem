@@ -7,6 +7,20 @@ window.onload = function () {
     }
 
     /*
-    
+    Firebase get
     */
+    var starCountRef = firebase.database().ref('test');
+    starCountRef.on('value', function (snapshot) {
+        console.log(snapshot.val());
+    });
+
+    /*
+    Get all switches from a room
+    update value to firebase
+    */
+    const btn = document.querySelector("#r1l");
+    btn.addEventListener('click', function () {
+        btn.checked ? firebase.database().ref('room1/light').set('true') : firebase.database().ref('room1/light').set('false');
+    })
+
 }
