@@ -20,7 +20,7 @@ window.onload = function () {
     */
     const btn = document.querySelector("#r1l");
     btn.addEventListener('click', function () {
-        btn.checked ? firebase.database().ref('room1/light').set('true') : firebase.database().ref('room1/light').set('false');
+        btn.checked ? firebase.database().ref('room1/light').set(true) : firebase.database().ref('room1/light').set(false);
     })
 
 }
