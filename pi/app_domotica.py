@@ -58,8 +58,8 @@ while True:
         sense.set_pixel(7, 7, 255, 0, 0)
 
     #get temp and humidity
-    humidity = round(sense_hat.get_humidity())
-    temp = round(sense_hat.get_temperature())
+    humidity = round(sense.get_humidity())
+    temp = round(sense.get_temperature())
     root.db.reference('/sensors').set({
         'temperature': temp,
         'humidity': humidity
