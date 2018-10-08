@@ -16,16 +16,16 @@ while True:
     sense.clear()
 
     #import firebase vars
-    r1l = db.reference('/room1/light').get()
-    r1s = db.reference('/room1/socket').get()
-    r2l = db.reference('/room2/light').get()
-    r2s = db.reference('/room2/socket').get()
-    kil = db.reference('/kitchen/light').get()
-    kis = db.reference('/kitchen/socket').get()
-    kid = db.reference('/kichen/door').get()
-    lrl = db.reference('/livingroom/light').get()
-    lrs = db.reference('/livingroom/socket').get()
-    lrd = db.reference('/livingroom/door').get()
+    r1l = db.reference('r1l').get()
+    r1s = db.reference('r1s').get()
+    r2l = db.reference('r2l').get()
+    r2s = db.reference('r2s').get()
+    kil = db.reference('kil').get()
+    kis = db.reference('kis').get()
+    kid = db.reference('kid').get()
+    lrl = db.reference('lrl').get()
+    lrs = db.reference('lrs').get()
+    lrd = db.reference('lrd').get()
 
     #color lights
     #room 1
